@@ -11,15 +11,13 @@
     {{/is}}
 
     <div class="widget sidebar-featured">
-        <h4 class="sidebar-featured-header">Must Read</h4>
+        <h4 class="sidebar-featured-header">Most Recent</h4>
         {{#get "posts" limit="5"}}{{/get}}
             <ul>
             {{#foreach posts}}
                 <li><a href="{{url}}">{{title}}</a></li>
             {{/foreach}}
             </ul>
-        {{else}}
-            {{#if @error}}{{@error}}{{/if}}
         {{/get}}
     </div>
 
@@ -46,8 +44,6 @@
                 <li><a href="{{url}}">{{title}}</a></li>
             {{/foreach}}
             </ul>
-        {{else}}
-            {{#if @error}}{{@error}}{{/if}}
         {{/get}}
     </div>
     
