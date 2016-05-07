@@ -11,6 +11,19 @@
     {{/is}}
 
 
+    <div class="widget sidebar-featured">
+        <h4 class="sidebar-featured-header">Must Read</h4>
+        {{#get "posts" limit="all" filter="featured:true"}}
+            <ul>
+            {{#foreach posts}}
+                <li><a href="{{url}}">{{title}}</a></li>
+            {{/foreach}}
+            </ul>
+        {{else}}
+            {{#if @error}}{{@error}}{{/if}}
+        {{/get}}
+    </div>
+    
     <!--<div class="widget sidebar-featured">
         <h4 class="sidebar-featured-header">Upcoming Events</h4>
         <p>Here's the upcoming public events I'll be at:</p>
