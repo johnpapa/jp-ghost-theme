@@ -2392,7 +2392,7 @@ footer a
   height: 600px;
 }
 
-#ad5, #ad6
+#ad3, #ad4
 {
   height: 90px;
   width: 728px;
@@ -2420,7 +2420,7 @@ iframe.twitter-tweet
 /* Banner ad has to go when the page is too narrow */
 @media (min-width:0)and (max-width:53em)
 {
-  #ad5, #ad6
+  #ad3, #ad4
   {
     display: none;
   }
