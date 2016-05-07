@@ -14,7 +14,7 @@
 
     <div class="widget sidebar-featured">
         <h4 class="sidebar-featured-header">Most Recent</h4>
-        {{#get "posts" limit="5"}}
+        {{#get "posts" limit="7"}}
             <ul>
             {{#foreach posts}}
                 <li><a href="{{url}}">{{title}}</a></li>
@@ -40,7 +40,7 @@
 
     <div class="widget sidebar-featured">
         <h4 class="sidebar-featured-header">Must Read</h4>
-        {{#get "posts" limit="all" filter="featured:true"}}
+        {{#get "posts" limit="7" filter="featured:true"}}
             <ul>
             {{#foreach posts}}
                 <li><a href="{{url}}">{{title}}</a></li>
