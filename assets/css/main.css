@@ -2373,10 +2373,10 @@ footer a
 
 /* Troy's custom bits */
 
-#ad1, #ad2, #ad3, #ad4, #ad5, #ad6
+/*#ad1, #ad2, #ad3, #ad4, #ad5, #ad6
 {
   background-color: #D2D2D2;
-}
+}*/
 
 #ad1, #ad2
 {
@@ -2402,10 +2402,10 @@ footer a
   display: block;
 }
 
-  #ad1 iframe, #ad2 iframe, #ad3 iframe, #ad4 iframe, #ad5 iframe, #ad6 iframe
-  {
-    padding: 0;
-  }
+#ad1 iframe, #ad2 iframe, #ad3 iframe, #ad4 iframe, #ad5 iframe, #ad6 iframe
+{
+  padding: 0;
+}
 
 #disqus_thread
 {
