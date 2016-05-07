@@ -973,16 +973,6 @@ th, td
   margin-left: auto;
 }
 
-.post_header
-{
-  background-image: url(/assets/img/page-banner.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #000000;
-  background-position: 100% 15%;
-  height: 290px;
-}
-
 @media (min-width:0)and (max-width:65em)
 {
   .post
@@ -1292,7 +1282,7 @@ th, td
 
 .post_header
 {
-  background-image: url(/assets/img/page-banner.jpg);
+  background-image: url(/assets/img/page-banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000000;
