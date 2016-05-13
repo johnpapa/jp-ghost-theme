@@ -3,20 +3,15 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
-
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
 {{! Header transparent}}
 {{> header}}
 
-
-
 <div class="post_header container"{{#if image}} style="background-image: url({{image}})"{{/if}}>
   <div class="hover"></div>
 </div>
-
-
 
 <div class="main-wrapper">
 <div class="content-wrapper">

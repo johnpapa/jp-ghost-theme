@@ -524,10 +524,13 @@ pre > code
 
 code
 {
-  padding: 3px 5px;
+  padding: 2px 4px;
   background: #eeedea;
   border: 1px solid #cec9c4;
   white-space: nowrap;
+  color: #A62E5C;
+  font-family: Consolas;
+  font-size: smaller;
 }
 
 .article .article_text > p:first-child:first-letter
