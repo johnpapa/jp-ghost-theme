@@ -2367,11 +2367,6 @@ footer a
 
 /* Troy's custom bits */
 
-/*#ad1, #ad2, #ad3, #ad4, #ad5, #ad6
-{
-  background-color: #D2D2D2;
-}*/
-
 #ad1, #ad2
 {
   margin: 18px 0 38px;
@@ -2395,6 +2390,10 @@ footer a
   background-color: #cec9c4;
   display: block;
 }
+#ad7
+{
+  display: none;
+}
 
 #ad1 iframe, #ad2 iframe, #ad3 iframe, #ad4 iframe, #ad5 iframe, #ad6 iframe
 {
@@ -2414,6 +2413,10 @@ iframe.twitter-tweet
 /* Banner ad has to go when the page is too narrow */
 @media (min-width:0)and (max-width:53em)
 {
+  #ad7
+  {
+    display: block;
+  }
   #ad3, #ad4
   {
     display: none;
