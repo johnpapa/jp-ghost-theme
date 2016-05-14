@@ -1,1 +1,1 @@
-# th-ghost-theme
+#jp-ghost-theme
