@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     cssmin = require('gulp-cssmin'),
+    zip = require('gulp-zip'),
     cmq = require('gulp-combine-media-queries');
 
 gulp.task('bundle-minify-js', function () {
@@ -29,7 +30,9 @@ gulp.task('build-all', ['bundle-minify-js', 'styles-build'], function () {
   ];
   return gulp
     .src(source, {base: './'})
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
+		.pipe(zip('jp-ghost-theme.zip'))
+		.pipe(gulp.dest('./'));
 })
 
 gulp.task('default', ['build-all']);

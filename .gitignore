@@ -13,3 +13,6 @@ assets/js/app.js
 
 # Dist folder
 dist
+
+# no zips
+*.zip
