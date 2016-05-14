@@ -473,7 +473,7 @@ pre
 
 .content-sidebar a
 {
-  color: #ef8354;
+  color: #A62E5C;
   text-decoration: underline;
 }
 
@@ -1753,6 +1753,7 @@ th, td
 .article .post_title a
 {
   color: #403d34;
+  color: #A62E5C
   text-decoration: none;
 }
 
