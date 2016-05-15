@@ -2365,7 +2365,7 @@ footer a
   transform: translate(18%,0)rotate(45deg);
 }
 
-/* Troy's custom bits */
+/* ads */
 
 #ad1, #ad2
 {
@@ -2390,12 +2390,12 @@ footer a
   background-color: #cec9c4;
   display: block;
 }
-#ad7
+#ad7, #ad8
 {
   display: none;
 }
 
-#ad1 iframe, #ad2 iframe, #ad3 iframe, #ad4 iframe, #ad5 iframe, #ad6 iframe, #ad7 iframe
+#ad1 iframe, #ad2 iframe, #ad3 iframe, #ad4 iframe, #ad5 iframe, #ad6 iframe, #ad7 iframe, #ad8 iframe
 {
   padding: 0;
 }
@@ -2413,7 +2413,7 @@ iframe.twitter-tweet
 /* Banner ad has to go when the page is too narrow */
 @media (min-width:0)and (max-width:53em)
 {
-  #ad7
+  #ad7, #ad8
   {
     display: block;
   }
