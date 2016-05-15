@@ -102,7 +102,7 @@ a
   -o-transition-duration: .2s;
   -webkit-transition-duration: .2s;
   transition-duration: .2s;
-  color: #ef8354;
+  color: #A62E5C;
 }
 
 button, input, label, select, textarea
@@ -112,7 +112,7 @@ button, input, label, select, textarea
   color: #fcfbf7;
   background-color: #565246;
   outline: 0;
-  webkit-appearance: button;
+  -webkit-appearance: button;
   cursor: pointer;
 }
 
@@ -743,6 +743,7 @@ th, td
 {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container
@@ -1752,8 +1753,7 @@ th, td
 
 .article .post_title a
 {
-  color: #403d34;
-  color: #A62E5C
+  color: #A62E5C;
   text-decoration: none;
 }
 
