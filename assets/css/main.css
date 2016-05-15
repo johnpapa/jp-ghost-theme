@@ -2410,13 +2410,18 @@ iframe.twitter-tweet
   margin-bottom: 2.5rem !important;
 }
 
-/* Banner ad has to go when the page is too narrow */
-@media (min-width:0)and (max-width:53em)
+/* iPad and smaller shows these ads, when sidebar disappears */
+@media (min-width:0)and (max-width:47em)
 {
   #ad7, #ad8
   {
     display: block;
   }
+}
+
+/* Banner ad has to go when the page is too narrow */
+@media (min-width:0)and (max-width:47em)
+{
   #ad3, #ad4
   {
     display: none;
