@@ -337,11 +337,14 @@ blockquote
   blockquote > p
   {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.846em;
     font-style: italic;
     line-height: 1.52em;
+    font-size: 1.4em;
+    padding: 1em;
+    border-left: #A62E5C solid 0.3em;
+    width: 94% !important;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
 @media (min-width:25.0625em)and (max-width:65em)
@@ -367,7 +370,6 @@ blockquote
 
 blockquote:before
 {
-  content: '\201C';
   display: block;
   font-size: 5.1em;
   color: #bfc0c0;
@@ -376,7 +378,6 @@ blockquote:before
 
 blockquote:after
 {
-  content: '\201D';
   display: block;
   font-size: 5.1em;
   color: #bfc0c0;
