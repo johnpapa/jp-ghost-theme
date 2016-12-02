@@ -1,30 +1,57 @@
 <div class="content-sidebar">
-    
-    {{#is "home"}}
-    {{else}}
-        <div class="widget sidebar-featured">
-            <h4 class="sidebar-featured-header">John</h4>
-            <p>{{@blog.description}} <a href="/about" class="article_link-more fa fa-long-arrow-right"></a></p>
-        </div>
 
-        <hr/>
-    {{/is}}
+    {{#is "home"}} {{else}}
+    <div class="widget sidebar-featured">
+        <h4 class="sidebar-featured-header">John</h4>
+        <p>{{@blog.description}}
+            <a href="/about" class="article_link-more fa fa-long-arrow-right"></a>
+        </p>
+    </div>
 
+    <hr/> {{/is}}
 
+    <style type="text/css">
+        .projects a {
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .projects a.column {
+            max-width: 49%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .projects a:hover {
+            -webkit-transform: scale(1.05, 1.05);
+            -moz-transform: scale(1.05, 1.05);
+            -ms-transform: scale(1.05, 1.05);
+            -o-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+        }
+    </style>
+
+    <div class="widget sidebar-featured projects">
+        <h4 class="sidebar-featured-header">Latest Projects</h4>
+        <a class="column" target="_blank" href="https://devchat.tv/adv-in-angular"><img width="100%" src="http://johnpapa.net/content/images/2016/12/adventures-in-angular.png" alt=""></a>
+        <a class="column" target="_blank" href="https://developers.google.com/experts/people/john-papa"><img width="100%" src="http://johnpapa.net/content/images/2016/12/gde.png" alt=""></a>
+        <a target="_blank" href="https://www.pluralsight.com/authors/john-papa"><img width="100%" src="http://johnpapa.net/content/images/2016/12/pluralsight.png" alt=""></a>
+        <a target="_blank" href="http://jpapa.me/a2ps1stlook"><img width="100%" src="http://johnpapa.net/content/images/2016/12/a2-1st-banner.png" alt=""></a>
+        <a target="_blank" href="https://channel9.msdn.com/Events/Ignite/2016/BRK2193"><img width="100%" src="http://johnpapa.net/content/images/2016/12/vscode-ignite.jpg" alt=""></a>
+    </div>
+    <hr>
 
     <div class="widget sidebar-featured">
         <h4 class="sidebar-featured-header">Most Recent</h4>
         {{#get "posts" limit="7"}}
-            <ul>
+        <ul>
             {{#foreach posts}}
-                <li><a href="{{url}}">{{title}}</a></li>
+            <li><a href="{{url}}">{{title}}</a></li>
             {{/foreach}}
-            </ul>
-        {{else}}
-            {{#if @error}}{{@error}}{{/if}}
-        {{/get}}
+        </ul>
+        {{else}} {{#if @error}}{{@error}}{{/if}} {{/get}}
     </div>
-    
+
     <!--<div class="widget sidebar-featured">
         <h4 class="sidebar-featured-header">Upcoming Events</h4>
         <p>Here's the upcoming public events I'll be at:</p>
@@ -41,16 +68,14 @@
     <div class="widget sidebar-featured">
         <h4 class="sidebar-featured-header">Must Read</h4>
         {{#get "posts" limit="7" filter="featured:true"}}
-            <ul>
+        <ul>
             {{#foreach posts}}
-                <li><a href="{{url}}">{{title}}</a></li>
+            <li><a href="{{url}}">{{title}}</a></li>
             {{/foreach}}
-            </ul>
-        {{else}}
-            {{#if @error}}{{@error}}{{/if}}
-        {{/get}}
+        </ul>
+        {{else}} {{#if @error}}{{@error}}{{/if}} {{/get}}
     </div>
-    
+
     <hr/>
 
     <!--<div class="widget sidebar-featured">
@@ -84,7 +109,7 @@
           </ul>
       {{/get}}
     </div>-->
-    
+
     <hr/>
 
     <!--<div class="widget sidebar-featured">
