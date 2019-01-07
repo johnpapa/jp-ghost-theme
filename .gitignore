@@ -16,3 +16,5 @@ dist
 
 # no zips
 *.zip
+
+.DS_STORE
