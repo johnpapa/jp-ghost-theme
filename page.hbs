@@ -9,7 +9,8 @@
 {{! Header transparent}}
 {{> header}}
 
-<div class="article_feature_first-img container" style="background-image: url({{#if image}}{{image}}{{else}}{{@blog.cover}}{{/if}})">
+<div class="article_feature_first-img container"
+    style="background-image: url({{#if feature_image}}{{feature_image}}{{else}}{{@blog.cover}}{{/if}})">
     <div class="hover"></div>
     <article class="article_item_first wrap hover container">
         <header class="post_head">
@@ -26,10 +27,14 @@
         <article class="article container">
             <section class="article_text post">
                 {{content}}
-                <div id="ad3" data-type="ad" data-publisher="lqm.johnpapa.site" data-zone="post" data-format="728x90"></div>
-                <div id="ad4" data-type="ad" data-publisher="lqm.johnpapa.site" data-zone="post" data-format="728x90"></div>
-                <div id="ad7" data-type="ad" data-publisher="lqm.johnpapa.site" data-zone="post" data-format="300x250"></div>
-                <div id="ad8" data-type="ad" data-publisher="lqm.johnpapa.site" data-zone="post" data-format="300x250"></div>
+                <div id="ad3" data-type="ad" data-publisher="lqm.johnpapa.site" data-zone="post" data-format="728x90">
+                </div>
+                <div id="ad4" data-type="ad" data-publisher="lqm.johnpapa.site" data-zone="post" data-format="728x90">
+                </div>
+                <div id="ad7" data-type="ad" data-publisher="lqm.johnpapa.site" data-zone="post" data-format="300x250">
+                </div>
+                <div id="ad8" data-type="ad" data-publisher="lqm.johnpapa.site" data-zone="post" data-format="300x250">
+                </div>
             </section>
         </article>
     </main>
