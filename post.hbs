@@ -9,7 +9,7 @@
 {{! Header transparent}}
 {{> header}}
 
-<div class="post_header container" {{#if image}} style="background-image: url({{img_url}})" {{/if}}>
+<div class="post_header container" {{#if feature_image}} style="background-image: url({{img_url}})" {{/if}}>
   <div class="hover"></div>
 </div>
 
@@ -83,7 +83,7 @@
           </section>
           {{#author}}
           <section class="article-open_author">
-            {{#if image}}
+            {{#if feature_image}}
             <figure class="article-open_author_image">
               <div class="img" style="background-image: url({{img_url}})"><span class="hidden">{{name}}'s
                   Picture</span></div>
