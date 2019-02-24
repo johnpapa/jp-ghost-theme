@@ -2,60 +2,63 @@
 <html class="no-js" lang="en">
 
 <head>
-    {{! Document Settings }}
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {{! Document Settings }}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    {{! Page Meta }}
-    <title>John Papa: {{meta_title}}</title>
-    <meta name="description" content="">
+  {{! Page Meta }}
+  <title>John Papa: {{meta_title}}</title>
+  <meta name="description" content="">
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{! Place favicon.ico in the asset directory }}
-    <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
+  {{! Place favicon.ico in the asset directory }}
+  <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
 
-    {{! Styles'n'Scripts }}
-    <link rel="stylesheet" href="{{asset "css/main.min.css"}}">
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
-
-    {{! Ghost outputs important style and meta data with this tag }}
-    {{ghost_head}}
-    <script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-18897867-1', 'auto');ga('send', 'pageview');</script>
+  {{! Styles'n'Scripts }}
+  <link rel="stylesheet" href="{{asset "css/main.min.css"}}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
+  <script
+    type="text/javascript">(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-18897867-1', 'auto'); ga('send', 'pageview');</script>
 </head>
 
 <body class="{{body_class}}">
-    <!--[if lt IE 8]>
+  <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    {{! Everything else gets inserted here }}
+  {{! Everything else gets inserted here }}
 
-    <div id="container">
-        {{{body}}}
-    </div>
+  <div id="container">
+    {{{body}}}
+  </div>
 
-    {{! Footer }}
-    <footer id="footer">
+  {{! Footer }}
+  <footer id="footer">
 
     {{! Footer - Colons info }}
     {{> footer-info-block}}
 
     {{! Footer - info }}
     <div class="footer_info_block container">
-        <div class="footer_info wrap">
-            <div class="footer_socialIcons">
-                {{> social-icons}}
-            </div>
+      <div class="footer_info wrap">
+        <div class="footer_socialIcons">
+          {{> social-icons}}
         </div>
+      </div>
     </div>
-    </footer>
+  </footer>
 
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
+  {{! Ghost outputs important scripts and data with this tag }}
+  {{ghost_foot}}
 
-    {{! The main JavaScript file for Casper }}
-    <script type="text/javascript">!function(s){"use strict";function e(s){return new RegExp("(^|\\s+)"+s+"(\\s+|$)")}function n(s,e){var n=a(s,e)?c:t;n(s,e)}var a,t,c;"classList"in document.documentElement?(a=function(s,e){return s.classList.contains(e)},t=function(s,e){s.classList.add(e)},c=function(s,e){s.classList.remove(e)}):(a=function(s,n){return e(n).test(s.className)},t=function(s,e){a(s,e)||(s.className=s.className+" "+e)},c=function(s,n){s.className=s.className.replace(e(n)," ")});var i={hasClass:a,addClass:t,removeClass:c,toggleClass:n,has:a,add:t,remove:c,toggle:n};"function"==typeof define&&define.amd?define(i):s.classie=i}(window);!function(){function e(){n()}function n(){d.addEventListener("click",t),i&&i.addEventListener("click",t),o.addEventListener("click",function(e){var n=e.target;u&&n!==d&&t()})}function t(){u?classie.remove(c,"show-menu"):classie.add(c,"show-menu"),u=!u}var c=document.body,o=document.querySelector("#container"),d=document.getElementById("open-button"),i=document.getElementById("close-button"),u=!1;e()}();function _dmBootstrap(t){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https://":"http://")+t,(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}function _dmFollowup(t){"undefined"==typeof DMAds&&_dmBootstrap("cdn2.DeveloperMedia.com/a.min.js")}!function(){_dmBootstrap("cdn1.DeveloperMedia.com/a.min.js"),setTimeout(_dmFollowup,2e3)}();var disqus_shortname="johnpapa";!function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript",t.src="//"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(t)}();</script>
+  {{! The main JavaScript file for Casper }}
+  <script
+    type="text/javascript">!function (s) { "use strict"; function e(s) { return new RegExp("(^|\\s+)" + s + "(\\s+|$)") } function n(s, e) { var n = a(s, e) ? c : t; n(s, e) } var a, t, c; "classList" in document.documentElement ? (a = function (s, e) { return s.classList.contains(e) }, t = function (s, e) { s.classList.add(e) }, c = function (s, e) { s.classList.remove(e) }) : (a = function (s, n) { return e(n).test(s.className) }, t = function (s, e) { a(s, e) || (s.className = s.className + " " + e) }, c = function (s, n) { s.className = s.className.replace(e(n), " ") }); var i = { hasClass: a, addClass: t, removeClass: c, toggleClass: n, has: a, add: t, remove: c, toggle: n }; "function" == typeof define && define.amd ? define(i) : s.classie = i }(window); !function () { function e() { n() } function n() { d.addEventListener("click", t), i && i.addEventListener("click", t), o.addEventListener("click", function (e) { var n = e.target; u && n !== d && t() }) } function t() { u ? classie.remove(c, "show-menu") : classie.add(c, "show-menu"), u = !u } var c = document.body, o = document.querySelector("#container"), d = document.getElementById("open-button"), i = document.getElementById("close-button"), u = !1; e() }(); function _dmBootstrap(t) { var e = document.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = ("https:" == document.location.protocol ? "https://" : "http://") + t, (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(e) } function _dmFollowup(t) { "undefined" == typeof DMAds && _dmBootstrap("cdn2.DeveloperMedia.com/a.min.js") } !function () { _dmBootstrap("cdn1.DeveloperMedia.com/a.min.js"), setTimeout(_dmFollowup, 2e3) }(); var disqus_shortname = "johnpapa"; !function () { var t = document.createElement("script"); t.async = !0, t.type = "text/javascript", t.src = "//" + disqus_shortname + ".disqus.com/count.js", (document.getElementsByTagName("HEAD")[0] || document.getElementsByTagName("BODY")[0]).appendChild(t) }();</script>
 </body>
+
 </html>
